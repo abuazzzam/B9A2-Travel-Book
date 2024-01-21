@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Shared Section */
+.brand-color {
+    color: #FF5400;
+}
+
+/* Nav section */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 1.13rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424247;
+}
+
+.brand-title {
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.home-size {
+    font-weight: 700;
+}
+
+header {
+    padding: 50px 135px;
+}
+
+.banner {
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(Images/Group13.png) ;
+    background-size: cover;
+    max-width: 1170px;
+    height: 500px;   
+}
+.banner-content{
+    text-align: center;
+}
