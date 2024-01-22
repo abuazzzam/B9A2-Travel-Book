@@ -23,6 +23,7 @@
     color: #5A5A5D;
     font-size: 1rem;
     font-weight: 400;
+    margin-top: 24px;
 }
 
 .common-btn {
@@ -182,14 +183,58 @@ main {
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
     padding: 32px;
-    margin: 32px 250px ;
+    margin: 32px 250px;
 }
 
 .card-title {
+    color: #131318;
+    margin: 16px 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.card-description {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* card-section  */
+.newsletter-section {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.newsletter {
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+    padding: 40px;
+
+}
+
+.newsletter-section input {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
     margin: 16px 0;
 }
 
-card-section @media screen and (max-width: 576px) {
+.newsletter-section input[type=button] {
+    color: #FFF;
+    background: #FF5400;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.newsletter-section img {
+    /* width: 100%; */
+}
+
+
+@media screen and (max-width: 576px) {
 
     header {
         padding: 30px;
