@@ -35,7 +35,6 @@
     color: #FFF;
     font-size: 1.5rem;
     font-weight: 800;
-
 }
 
 .banner-description {}
@@ -234,9 +233,26 @@ main {
     background: rgba(19, 19, 24, 0.10);
 }
 
-.newsletter-section img {
-    /* width: 100%; */
+.image-over {
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    left: 342px;
+    bottom: 172px;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
 }
+.image-over h2{
+    
+}
+.image-over p{
+    padding-top: 50px;
+}
+
+
 
 /* footer section */
 
@@ -264,20 +280,20 @@ footer {
     margin: 15px 336px;
 }
 
-.social{
+.social {
     display: flex;
     justify-content: center;
 }
 
-.social img{
+.social img {
     margin-left: 2%;
 }
 
-.copyright{
+.copyright {
     text-align: center;
 }
 
-footer > hr{
+footer>hr {
     width: 872px;
     margin: 50px 284px;
 }
@@ -292,7 +308,8 @@ footer > hr{
     nav ul,
     .input-section,
     .popular-tour,
-    .card-section {
+    .card-section,
+    .newsletter-section {
         flex-direction: column;
     }
 
@@ -309,6 +326,10 @@ footer > hr{
         margin: 20px;
     }
 
+    .choose-destination {
+        margin: 16px 80px;
+    }
+
     .popular-description {}
 
     .popular-tour img {
@@ -316,11 +337,50 @@ footer > hr{
         height: 342px;
         align-content: center;
     }
+
+    .newsletter-section input {
+        width: 288px;
+        margin: 16px 0;
+    }
+
+    .newsletter-section img {
+        width: 100%;
+    }
+
+    footer>hr {
+        width: 300px;
+        margin: 15px 50px;
+    }
+
+    .footer-description {
+        margin: 10px 115px;
+    }
+
+    .card-3 {
+        margin: 24px auto;
+    }
+    .image-over {
+        border-radius: 8px;
+         left: 245px;
+        bottom: 72px;
+        width: 124px;
+        height: 50px;
+}
+.image-over h2{
+    font-size: .8rem;
+}
+.image-over p{
+    font-size: .5rem;
+    padding-top: 10px;
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
     header {
         padding: 20px 80px;
+    }
+
+    main {
+        margin: 20px;
     }
 
     .banner-title {
@@ -337,8 +397,19 @@ footer > hr{
         height: 40px;
     }
 
-    .popular-tour {
+    .popular-tour,
+    .card-section,
+    .newsletter-section {
         flex-direction: column;
+    }
+
+    .card-3 {
+        margin: 24px auto;
+    }
+
+    footer>hr {
+        width: 700px;
+        margin: 15px 100px;
     }
 
 }
