@@ -12,6 +12,11 @@
 .brand-color {
     color: #FF5400;
 }
+.common-title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
 
 .banner-description {}
 
@@ -75,7 +80,7 @@ header {
 }
 
 .banner-description {
-    font-size: 1.13rem;
+    font-size: 1rem;
     font-weight: 400;
     margin: 0 247px;
     margin-bottom: 48px;
@@ -102,7 +107,20 @@ input {
     padding-left: 16px;
   }
 
+  main{
+    margin: 0 135px;
+  }
 
+/* popular section */
+
+.popular-tour{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+}
 @media screen and (max-width: 576px) {
   
   header {
