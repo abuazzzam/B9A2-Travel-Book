@@ -56,9 +56,10 @@ header {
 .banner {
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(Images/Group13.png);
-    background-size: cover;
-    width: 1170px;
-    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* width: 1170px;
+    height: 500px; */
 }
 
 .banner-content {
@@ -100,3 +101,38 @@ input {
 ::placeholder {
     padding-left: 16px;
   }
+
+
+@media screen and (max-width: 576px) {
+  
+  header {
+    padding: 30px;
+}
+nav,
+nav ul,
+.input-section {
+    flex-direction: column;
+}
+.banner-title{
+    font-size: 1.5rem;
+}
+.banner-description{
+    font-size: 1rem;
+    margin:auto
+}
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 20px 80px;
+    }
+    .banner-title{
+        font-size: 1.5rem;
+    }
+    .banner-description{
+        font-size: 1rem;
+        margin:auto
+    }
+    input {
+        width: 115px;
+        height: 40px;
+}
