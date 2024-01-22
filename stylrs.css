@@ -157,69 +157,95 @@ main {
 .choose-description {}
 
 /* card-section */
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
 .card-1 {
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
-    /* background: rgba(251, 181, 99, 0.05);
-} */
+    background: rgba(251, 181, 99, 0.05);
+    padding: 32px;
+}
 
+.card-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 32px;
+}
 
-    card-section @media screen and (max-width: 576px) {
+.card-3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding: 32px;
+    margin: 32px 250px ;
+}
 
-        header {
-            padding: 30px;
-        }
+.card-title {
+    margin: 16px 0;
+}
 
-        nav,
-        nav ul,
-        .input-section,
-        .popular-tour {
-            flex-direction: column;
-        }
+card-section @media screen and (max-width: 576px) {
 
-        .banner-title {
-            font-size: 1.5rem;
-        }
-
-        .banner-description {
-            font-size: 1rem;
-            margin: auto
-        }
-
-        main {
-            margin: 20px;
-        }
-
-        .popular-description {}
-
-        .popular-tour img {
-            width: 335px;
-            height: 342px;
-            align-content: center;
-        }
+    header {
+        padding: 30px;
     }
 
-    @media screen and (min-width: 576px) and (max-width: 960px) {
-        header {
-            padding: 20px 80px;
-        }
-
-        .banner-title {
-            font-size: 1.5rem;
-        }
-
-        .banner-description {
-            font-size: 1rem;
-            margin: auto
-        }
-
-        input {
-            width: 115px;
-            height: 40px;
-        }
-
-        .popular-tour {
-            flex-direction: column;
-        }
-
+    nav,
+    nav ul,
+    .input-section,
+    .popular-tour,
+    .card-section {
+        flex-direction: column;
     }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .banner-description {
+        font-size: 1rem;
+        margin: auto
+    }
+
+    main {
+        margin: 20px;
+    }
+
+    .popular-description {}
+
+    .popular-tour img {
+        width: 335px;
+        height: 342px;
+        align-content: center;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 20px 80px;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .banner-description {
+        font-size: 1rem;
+        margin: auto
+    }
+
+    input {
+        width: 115px;
+        height: 40px;
+    }
+
+    .popular-tour {
+        flex-direction: column;
+    }
+
+}
