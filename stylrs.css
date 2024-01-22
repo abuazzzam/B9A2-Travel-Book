@@ -229,19 +229,58 @@ main {
     font-weight: 800;
 }
 
+.newsletter-section hr {
+    margin: 24px 0;
+    background: rgba(19, 19, 24, 0.10);
+}
+
 .newsletter-section img {
     /* width: 100%; */
 }
 
 /* footer section */
 
-footer{
+footer {
     background: rgba(19, 19, 24, 0.05);
     height: 500px;
-    
+    margin-top: 100px;
 }
 
+.footer-content {
+    text-align: center;
+    padding-top: 110px;
+}
 
+.footer-title {
+    font-size: 2rem;
+    font-weight: 800;
+    /* margin-bottom: 15px; */
+}
+
+.footer-description {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 15px 336px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social img{
+    margin-left: 2%;
+}
+
+.copyright{
+    text-align: center;
+}
+
+footer > hr{
+    width: 872px;
+    margin: 50px 284px;
+}
 
 @media screen and (max-width: 576px) {
 
